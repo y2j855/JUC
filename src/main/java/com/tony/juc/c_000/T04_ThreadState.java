@@ -5,8 +5,11 @@ package com.tony.juc.c_000;
  * Create Time : 2020/12/16 21:26
  * Description: 线程状态
  * 1.NEW        新建
- * 2.RUNNABLE   运行中
- * 3.TERMINATED 停止
+ * 2.RUNNABLE（Ready + Running）   运行中
+ * 3.TimeWaiting
+ * 4.Waiting
+ * 5.Blocked
+ * 6.TERMINATED 停止
  */
 public class T04_ThreadState {
     static class MyThread extends Thread{

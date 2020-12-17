@@ -1,7 +1,5 @@
 package com.tony.juc.c_009_volatile;
 
-import com.tony.juc.c_001_synchronized.T;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +11,7 @@ import java.util.List;
  * volatile不能保证原子性
  * 方法加synchronized
  */
-public class T02_T {
+public class TO4_VolatileNotSync {
     /*volatile*/ int count = 0;
     synchronized void m(){
         for (int i = 0; i < 10000; i++) {
@@ -23,7 +21,7 @@ public class T02_T {
     }
 
     public static void main(String[] args) {
-        T02_T t = new T02_T();
+        TO4_VolatileNotSync t = new TO4_VolatileNotSync();
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             threads.add(new Thread(t::m,"thread-" + i));

@@ -49,7 +49,5 @@ public class T07_LockSupport_WithoutSleep {
 
         t2.start();
         t1.start();
-
-
     }
 }

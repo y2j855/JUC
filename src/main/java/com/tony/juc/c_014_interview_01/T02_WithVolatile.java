@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
  * 奇怪现象:加了volatile不加同步容器也能完成功能。(不管，理解思想就行)
  *
  * 给lists添加volatile之后，t2能够接到通知，但是t2线程的死循环很浪费cpu，如果不用死循环，
- * 而且，如果在if和break之间被别的线程打断，得到的结果也不精确，用生产消费模式实现。
+ * 而且，如果在if和break之间被别的线程打断，得到的结果也不精确。
  */
 public class T02_WithVolatile {
 //    private volatile List<String> list = new ArrayList<>();

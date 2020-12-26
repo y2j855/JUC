@@ -2,20 +2,18 @@ package com.tony.juc.c_017_FromHashtableToCHM;
 
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
  * @author: Tony.Chen
- * Create Time : 2020/12/26 10:11
- * Description: CHM性能测试
- * 通过测试发现
- * chm写数据性能不如hashtable和synchashmap
- * 但是读数据的性能远远大于前两种。
- * 所以chm适用于写很少但读很多的场景。
- * 数据结构：1.7 数组+链表 1.8 数组+链表+红黑树
+ * Create Time : 2020/12/26 11:54
+ * Description: 跳表的性能测试
+ * 性能没有ConcurrentHashMap快
+ * 功能：排序的，查询相对较快的支持并发的容器。
+ * 数据结构：多层链表实现，就是建立多层级的索引，查找时将范围缩小很多。类似于二分查找
  */
-public class T04_TestConcurrentHashMap {
-    static Map<UUID, UUID> map = new ConcurrentHashMap<>();
+public class T05_TestConcurrentSkipListMap {
+    static Map<UUID, UUID> map = new ConcurrentSkipListMap<>();
 
     static int count = Constants.COUNT;
     static final int THREAD_COUNT = Constants.THREAD_COUNT;

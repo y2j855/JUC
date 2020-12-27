@@ -12,7 +12,7 @@ package com.tony.juc.c_021_ThreadPool;
  * 2.CachedThreadPool
  * 允许的创建线程数量为Integer.MAX_VALUE,可能会创建大量的线程，从而导致OOM。
  */
-public class T07_Executors {
+public class T08_Executors {
     public static void main(String[] args) {
     }
 }

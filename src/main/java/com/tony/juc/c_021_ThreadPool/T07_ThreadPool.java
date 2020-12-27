@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * Create Time : 2020/12/27 21:14
  * Description: ThreadPool基本使用
  */
-public class T08_ThreadPool {
+public class T07_ThreadPool {
 
     public static void main(String[] args) {
         ExecutorService service = Executors.newFixedThreadPool(5);

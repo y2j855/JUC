@@ -1,14 +1,14 @@
-package com.tony.juc.c_014_interview_02;
+package com.tony.juc.c_020_interview_A1B2C3;
 
 import java.util.concurrent.locks.LockSupport;
 
 /**
  * @author: Tony.Chen
  * Create Time : 2020/12/20 21:22
- * Description:
+ * Description: 使用LockSupport完成
  * 2个线程，要求交替打印A1B2C3...Z26
  */
-public class UseLockSupport {
+public class T02_LockSupport {
     static Thread t1 = null;
     static Thread t2 = null;
     public static void main(String[] args) {

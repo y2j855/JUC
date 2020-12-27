@@ -20,6 +20,8 @@ import java.util.concurrent.TimeUnit;
  * BlockingQueue<Runnable>:任务队列，当线程池没有可用线程时，将任务放到队列里。
  * ThreadFactory:线程工程。可以自定义
  * RejectedExecutionHandler:拒绝策略，jdk默认提供4中。但现实项目中一般都是根据业务自定义。
+ *
+ * ThreadPoolExecutor是ExecutorService的默认实现。
  */
 public class T06_HelloThreadPool {
     static class Task implements Runnable {

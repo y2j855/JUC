@@ -1,9 +1,10 @@
 Executor
 ExecutorService submit
-Callable = Runnable
-Executors
+Callable = Runnable + return
+Executors:现实项目不建议使用
 ThreadPool
 Future
+FutureTask -> Runnable Future
 
 fixed cached single scheduled workstealing forkjoin
 

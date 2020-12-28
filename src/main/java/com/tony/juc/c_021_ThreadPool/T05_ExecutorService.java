@@ -1,6 +1,5 @@
 package com.tony.juc.c_021_ThreadPool;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

@@ -36,6 +36,7 @@ public class T04_CompletableFuture {
 
         CompletableFuture.allOf(futureTM, futureTB, futureJD).join();
 
+        //通过lambda表达式方式调用，更加灵活。
         CompletableFuture.supplyAsync(() -> priceOfTM())
                 .thenApply(String::valueOf)
                 .thenApply(str -> "price" + str)

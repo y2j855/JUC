@@ -1,0 +1,7 @@
+最好的写法
+
+指定producer类型
+ringbuffer的等待策略
+设置多个consumer
+disruptor异常处理
+

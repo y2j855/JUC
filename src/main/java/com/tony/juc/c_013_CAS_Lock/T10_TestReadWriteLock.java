@@ -15,10 +15,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 共享锁  所有读的线程共享，写的线程阻塞的
  * 排他锁  只有当前写线程使用，其他阻塞等待
  *
- * 使用场景：当需要大部分读数据，少部分谢数据，能够提高效率。
+ * 使用场景：当需要大部分读数据，少部分写数据，能够提高效率。
  */
 public class T10_TestReadWriteLock {
-    static Lock lock = new ReentrantLock();
     private static int value;
 
     static ReadWriteLock readWriteLock = new ReentrantReadWriteLock();

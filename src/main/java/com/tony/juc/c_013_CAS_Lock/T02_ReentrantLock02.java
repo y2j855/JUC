@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author: Tony.Chen
  * Create Time : 2020/12/18 11:26
  * Description: ReentrantLock替代Synchronized
- * 使用ReetrantLock可以完成sync同样的功能
+ * 使用ReentrantLock可以完成sync同样的功能
  * 需要注意的是，必须要手动释放锁！！！
  * 使用sync锁定的话如果遇到异常，jvm自动释放锁。
  * 但是lock必须手动释放锁，因此经常在finally中进行锁的释放操作。

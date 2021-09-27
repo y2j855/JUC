@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author: Tony.Chen
  * Create Time : 2020/12/18 11:43
- * Description: ReentrantLock lockInterrputibly
+ * Description: ReentrantLock lockInterruptibly
  * 使用ReentrantLock还可以调用lockInterruptibly方法，可以对线程interrput方法做出响应，
  * 在一个线程等待锁的过程中，可以被打断。
  */
